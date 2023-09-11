@@ -33,8 +33,8 @@
 # pylint: disable=ungrouped-imports
 import sys
 import spidev
-from lib.neopixel_spi_write import neopixel_spi_write
-from lib import pixelbuf
+from py_neopixel_spidev.neopixel_spi_write import neopixel_spi_write
+from py_neopixel_spidev import pixelbuf
 
 __version__ = "0.0.0-auto.0"
 __repo__ = "https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel.git"

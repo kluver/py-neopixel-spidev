@@ -9,10 +9,10 @@
 import colorsys
 import time
 from numpy import arange
-from lib import neopixel_spidev as np
+from py_neopixel_spidev import neopixel_spidev as np
 
 # Init 56 LEDs on SPI bus 2, cs 0 with colors ordered green, red, blue
-with np.NeoPixelSpiDev(2, 0, n=56, pixel_order=np.GRB) as pixels:
+with np.NeoPixelSpiDev(1, 1, n=18) as pixels:
     try:
         # Scroll all LEDs through the color wheel using the HSV color model
         i = 0.0
